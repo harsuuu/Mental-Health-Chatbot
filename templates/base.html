@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3209/3209018.png" type="image/x-icon" />
+</head>
+<body> 
+     <!-- Navigation Bar -->
+     <nav>
+        <div class="logo"><b>Graphic Era Hospital</b></div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="new1">
+        <h1>Welcome to <span class="role"></span>
+        </h1>
+        <br>
+        <p>Our Scope of services growing with each passing day, in terms of coverage, are ensuring that the best treatment is provided to every patient utilizing them. Here’s a list of the services that the Hospital is currently working with.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="new2">
+        <h2>Our Scope of Services</h2>
+        <div class="services-list">
+            <div class="service-item">
+                <img src="https://image.freepik.com/free-vector/emergency-icon-vector-illustration_24911-41595.jpg" alt="Emergency Care">
+                <p>Emergency Care</p>
+            </div>
+            <div class="service-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/2317/2317969.png" alt="Primary Care">
+                <p>Neurosurgery</p>
+            </div>
+            <div class="service-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/4807/4807695.png" alt="Specialized Treatments">
+                <p>General Physician</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="new3">
+        <h2>Contact Us</h2>
+        <p>Address: Chakrata Rd, Dehradun, Uttarakhand 248008</p>
+        <p>Email: geims@geu.ac.in</p>
+        <p>Phone: 1800 889 7351</p>
+    </section>
+<div class="container">
+    <div class="chatbox">
+        <!-- chatbot support -->
+        <div class="chatbox__support">            
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">ChatBot</h4>
+                    <p class="chatbox__description--header">Hi, My name is Zara. How can I help you?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <!-- send button -->
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+        <!-- chatbot button -->
+        <div class="chatbox__button">
+            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+        </div>
+    </div>
+</div>
+    
+    <script>
+        $SCRIPT_ROOT = {{request.script_root|tojson }};
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script> 
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script>
+        var typeData = new Typed(".role", {
+          strings: [
+            "Graphic era Hospital",
+            "Hospital of Mental health",
+          ],
+          loop: true,
+          typeSpeed: 100,
+          backSpeed: 80,
+          backDelay: 1000,
+        });
+      </script>
+</body>
+</html>     
