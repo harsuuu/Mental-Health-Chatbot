@@ -35,7 +35,6 @@ $ (venv) python chat.py
 $ (venv) python app.py
 ```
 - Video :
-- 
 
 https://github.com/harsuuu/Mental-Health-Chatbot/assets/107912873/e253618f-1035-41f9-9804-787fbdf89891
 
