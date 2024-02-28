@@ -1,15 +1,15 @@
 # Mental-Health-Chatbot
 Introducing our Mental Health Chatbot: combining NLP, ML, HTML, CSS, and JavaScript. It offers empathetic conversations, personalized support, and resources. 
 
-### If you want to clone this then do this step :
+# If you want to clone this then do this step :
 
 ##Clone repo and create a virtual environment :
-
+```
 $ git clone https://github.com/harsuuu/Mental-Health-Chatbot
 $ python3 -m venv venv
 $ for windows -->  . \Scripts\activate
 $ for macbook -->  . venv/bin/activate
-
+```
 Install dependencies
 ```
 $ (venv) pip install Flask torch torchvision nltk
