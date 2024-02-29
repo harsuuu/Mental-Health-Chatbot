@@ -8,7 +8,7 @@ Introducing our Mental Health Chatbot: combining NLP, ML, HTML, CSS, and JavaScr
 $ git clone https://github.com/harsuuu/Mental-Health-Chatbot
 $ python3 -m venv venv
 $ for windows -->  . \Scripts\activate
-$ for macbook -->  . venv/bin/activate
+$ for macbook -->  .\venv\Scripts\activate
 ```
 Install dependencies
 ```
